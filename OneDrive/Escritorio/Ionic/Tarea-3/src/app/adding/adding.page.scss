@@ -1,0 +1,34 @@
+ion-content {
+    --padding-top: 16px; // Adjust padding as needed
+    --padding-bottom: 16px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  
+    .input-container {
+      display: flex;
+      flex-direction: column; // Ensure inputs stack vertically
+      width: 100%; // Take full width of the content
+    }
+  
+    ion-item {
+      --padding-start: 0; // Remove default ion-item padding
+      --inner-padding-end: 0;
+      width: 100%;  // Ensure inputs take full width within the container
+      margin-bottom: 16px; // Add spacing between items
+  
+    }
+  
+    ion-input {
+      width: 100%; // Make sure input takes full width of its parent (ion-item)
+    }
+  }
+
+  .center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+
+

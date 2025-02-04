@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>board</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>A number and show your multiplication table up to 13.</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Enter Number" label-placement="floating"  [clearInput]="true" fill="outline"  
+        [(ngModel)]="numero"
+         type="number"  placeholder="Enter number"></ion-input>
+      </ion-item>
+      <ion-item *ngFor="let N of Tabla">
+        {{N}} x {{numero}} = {{N*numero}}
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

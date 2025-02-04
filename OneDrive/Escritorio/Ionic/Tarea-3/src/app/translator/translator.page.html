@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>translator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Add two numbers and show the result.</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Enter Number" label-placement="floating"  [clearInput]="true" fill="outline"  
+        [(ngModel)]="numero"
+         type="number"  placeholder="Enter number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="traducir()" class="center-button" fill="outline">translator</ion-button>
+      </ion-item>
+      <ion-item lines="none">
+        Result:{{resultado}}
+       </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
